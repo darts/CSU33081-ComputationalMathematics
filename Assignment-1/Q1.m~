@@ -1,0 +1,10 @@
+determinant(0)
+
+function d = determinant (a)
+    matrixSize = size(a);
+    if(matrixSize(1,1) ~= matrixSize(1,2) || ~isMember(matrixSize(1,1), [2 3 4])())
+        d = "The matrix must be square.";
+        return
+    end
+    d= "test"
+end
