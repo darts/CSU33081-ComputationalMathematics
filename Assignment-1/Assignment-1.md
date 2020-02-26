@@ -1,7 +1,16 @@
-#  CSU33081: Computational Mathematics
+# CSU33081: Computational Mathematics
+
 ## Assignment 1 - Senán d'Art - 17329580  
 
-**Question 1**   
+**Question 1**
+
+**(a)**  
+(ii) 13
+
+**(b)**  
+(i) 0
+
+
 ```matlab
 function D = Determinant (A)
     matrixSize = size(A);
@@ -32,7 +41,7 @@ function detSum = detRecurse(mat)
     end
 end
 
-function subMat = getSubMat(mat, row, col)    
+function subMat = getSubMat(mat, row, col)
     matSize = size(mat);
     rowVec = 1:matSize(1,1);
     colVec = 1:matSize(1,2);
@@ -41,5 +50,3 @@ function subMat = getSubMat(mat, row, col)
     subMat = mat(rowVec, colVec);
 end
 ```
-(a) - (ii)  
-(b) - (i)  
