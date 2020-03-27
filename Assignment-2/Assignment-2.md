@@ -48,3 +48,14 @@ function [L, U] = LUdecompGauss (A)
     end
 end
 ```
+
+<br><br>
+
+### Question 2 
+
+Best: **2 & 5**  
+Worst: **1**
+
+<br><br>
+
+### Question 3
