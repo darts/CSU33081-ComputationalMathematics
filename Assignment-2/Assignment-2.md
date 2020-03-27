@@ -59,3 +59,37 @@ Worst: **1**
 <br><br>
 
 ### Question 3
+
+Eqn: $p = be^{mx}$  
+Linear (from slides): $ln(p) = mx + ln(b)$  
+
+The following code was used:  
+```matlab
+[a1, a0] = LinearReg(time, log(population));
+years = 1900:5:2020;
+plot(years, exp(a0) * exp(a1 * years), time, population, 'ro')
+
+function [a1, a0] = LinearReg(x,y)
+    nx=length(x);
+    ny=length(y);
+    if nx ~= ny
+        disp('ERROR: The number of elements in x must be the same as in y.');
+        a1 = 'Error';
+        a0 = 'Error';
+    else
+        Sx = sum(x);
+        Sy = sum(y);
+        Sxy = sum(x.*y);
+        Sxx = sum(x.^2);
+        a1 = (nx*Sxy-Sx*Sy)/(nx*Sxx-Sx^2);
+        a0 = (Sxx*Sy-Sxy*Sx)/(nx*Sxx-Sx^2);
+    end
+end
+```
+
+![linearRegressionResult](linearRegression.png)
+
+Answer: (i)  
+$b = 4.6831 * 10^{-8}$  
+$m = 0.022$  
+$Pop = 1014$
