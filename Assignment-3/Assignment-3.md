@@ -155,3 +155,30 @@ $$
 <br>
 
 #### (b)
+
+3-point, central distance: 
+$$
+\begin{aligned}
+f'(x_{i+1}) = 
+\frac{x_{i+1}-x_{i+2}}{(x_{i}-x_{i+1})(x_{i}-x_{i+2})}y_{i}
++ \\
+\frac{2x_{i+1}-x_{i}-x_{i+2}}{(x_{i+1}-x_{i})(x_{i+1}-x_{i+2})}y_{i+1}
++ \\
+\frac{x_{i+1}-x_{i}}{(x_{i+2}-x_{i})(x_{i+2}-x_{i+1})}y_{i+2}
+\end{aligned}
+$$
+
+Males:  
+Using formula, prediction = $673601$
+
+$$
+\frac{673601-677807}{677807} = -0.0062 = 0.62\%
+$$
+
+Females:  
+Using formula, prediction = $277987$
+$$
+\frac{277987-276417}{276417} = 0.00567 = 0.57\%
+$$
+
+Answer: $(ii)$
